@@ -3,7 +3,7 @@
 # Sets up the environment and presents an interactive app menu.
 #
 # The Cloud Shell tutorial guide clones the template repo and prompts the user
-# to run: source startup.sh
+# to run: source scripts/startup.sh
 # This script assumes it is running from within the cloned idso-app-template repo.
 
 set -e

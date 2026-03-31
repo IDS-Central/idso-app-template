@@ -1,27 +1,19 @@
-# App Configuration
+# [App Name] — App Context
 
-> **TODO:** This file is a placeholder. Claude Code will fill in the app-specific configuration during Phase 3 of the provisioning process. Do not edit manually.
+<!-- Claude Code: Update this file as you build the app. -->
+<!-- This helps you (and future sessions) understand what was built and why. -->
 
-## App Info
-- **App Name:** TODO
-- **Description:** TODO
-- **Cloud Run Service:** TODO
-- **Service Account:** TODO
+## Description
+<!-- What does this app do? Who is it for? -->
 
-## Data Architecture
+## Data Model
+<!-- Describe the key entities and their relationships -->
 
-### Cloud SQL (app data)
-- **Instance:** TODO
-- **Database:** TODO
-- **Tables:** TODO
+## Key Decisions
+<!-- Why did you structure things a certain way? Any tradeoffs? -->
 
-### BigQuery (read-only, if applicable)
-- **Reads from:** TODO — list existing datasets/tables this app reads, or "None"
+## Pages
+<!-- List the pages and what they do -->
 
-## Environment Variables (app-specific, beyond standard set)
-
-TODO — define any app-specific environment variables here.
-
-## Data Flow
-
-TODO — describe how data flows through the app.
+## API Routes
+<!-- List the API routes and their purpose -->
