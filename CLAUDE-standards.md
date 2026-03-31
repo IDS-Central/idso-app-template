@@ -237,6 +237,9 @@ Because of this:
 - Never hardcode or use a fallback secret key
 - Every data-modifying endpoint must enforce auth
 - Every data-modifying endpoint must record `updated_by` from the authenticated user
+- **Secret Manager IAM is per-secret, not project-wide.** Each app's service account is only granted `secretmanager.secretAccessor` on its own secrets (`idso-{APP_NAME}-secret-key`, `idso-{APP_NAME}-db-url`) plus the shared OAuth secrets (`idso-oauth-client-id`, `idso-oauth-client-secret`). Never grant `secretmanager.secretAccessor` at the project level.
+- **No shared GitHub tokens.** Each user authenticates `gh` CLI with their own GitHub account. Repo access is controlled by GitHub Team permissions on the `IDS-Central` org.
+- **No shared Anthropic API keys.** Each user has their own key in Secret Manager (`anthropic-api-key-{sanitized-email}`), scoped via IAM so only they can read it.
 
 ### New App Auth Setup Checklist
 
@@ -362,3 +365,5 @@ The following files are identical across all IDSO Next.js apps and should be cop
 - **Don't store secrets in code, environment files, or container images.** Use Secret Manager.
 - **Don't build custom authentication from scratch.** Copy the auth files from an existing IDSO app and use the google-auth-library OAuth pattern described in the Authentication section.
 - **Don't create a new OAuth Client ID per app.** All IDSO apps share one OAuth Client. Just add your redirect URI.
+- **Don't grant `secretmanager.secretAccessor` at the project level.** Always bind it per-secret so apps can only read their own secrets.
+- **Don't use a shared GitHub PAT or shared Anthropic API key.** Each user authenticates with their own credentials for auditability and cost attribution.

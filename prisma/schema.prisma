@@ -1,0 +1,33 @@
+// Prisma schema for IDSO apps
+// Datasource and generator blocks are fixed — do not modify.
+// Add your app's models below the generator block.
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// ┌──────────────────────────────────────────────────────────────────┐
+// │  Add your app's models below this line.                         │
+// │                                                                 │
+// │  Every model MUST include these audit fields:                   │
+// │    id         String   @id @default(uuid())                     │
+// │    created_at DateTime @default(now())                          │
+// │    updated_at DateTime @updatedAt                               │
+// │    updated_by String                                            │
+// │                                                                 │
+// │  Example:                                                       │
+// │                                                                 │
+// │  model Task {                                                   │
+// │    id         String   @id @default(uuid())                     │
+// │    title      String                                            │
+// │    status     String   @default("pending")                      │
+// │    created_at DateTime @default(now())                          │
+// │    updated_at DateTime @updatedAt                               │
+// │    updated_by String                                            │
+// │  }                                                              │
+// └──────────────────────────────────────────────────────────────────┘

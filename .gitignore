@@ -39,3 +39,7 @@ next-env.d.ts
 
 # Misc
 *.pem
+
+# Prisma
+prisma/*.db
+prisma/*.db-journal
