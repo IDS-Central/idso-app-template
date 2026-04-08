@@ -11,7 +11,7 @@ Claude Code handles everything — infrastructure, code, and deployment.
 Run the setup script. It checks your Google Cloud and GitHub access, installs Claude Code, and shows your app menu.
 
 ```bash
-source startup.sh
+source scripts/startup.sh
 ```
 
 <walkthrough-footnote>This takes about 60 seconds on first run. If it asks you to authenticate with GitHub, follow the prompts in your browser.</walkthrough-footnote>
@@ -24,4 +24,4 @@ The menu lets you:
 
 Claude Code will handle everything from here. Just tell it what you need.
 
-To come back later, open Cloud Shell and run `source startup.sh` again.
+To come back later, open Cloud Shell and run `source scripts/startup.sh` again.
