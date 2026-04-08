@@ -6,7 +6,7 @@ This template repo powers the IDSO app creation workflow. Click the button below
 
 ## Get Started
 
-[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/IDS-Central/idso-app-template&cloudshell_tutorial=.cloudshell/tutorial.md)
+[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/IDS-Central/idso-app-template&cloudshell_open_run=source%20scripts/startup.sh)
 
 **What happens when you click:**
 
