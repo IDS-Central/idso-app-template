@@ -1,0 +1,11 @@
+
+╔══════════════════════════════════════════════╗
+║         Welcome to IDSO App Generator        ║
+╚══════════════════════════════════════════════╝
+
+To get started, run this command:
+
+    source scripts/startup.sh
+
+This installs Claude Code and opens your app menu.
+
