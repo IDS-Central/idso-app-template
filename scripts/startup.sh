@@ -10,7 +10,7 @@ set -e
 
 # ─── Open tutorial panel if running in Cloud Shell ───
 if command -v teachme &>/dev/null; then
-  teachme tutorial.md &
+  teachme .cloudshell/tutorial.md &
 fi
 
 # ─── Configuration ───
