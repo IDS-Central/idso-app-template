@@ -1,3 +1,6 @@
+<walkthrough-tutorial-duration duration="3"></walkthrough-tutorial-duration>
+<walkthrough-author name="IDSO Team"></walkthrough-author>
+
 # IDSO App Generator
 
 ## Welcome

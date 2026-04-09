@@ -8,6 +8,11 @@
 
 set -e
 
+# ─── Open tutorial panel if running in Cloud Shell ───
+if command -v teachme &>/dev/null; then
+  teachme .cloudshell/tutorial.md &
+fi
+
 # ─── Configuration ───
 GCP_PROJECT="central-workspace"
 GH_ORG="IDS-Central"

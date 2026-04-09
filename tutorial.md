@@ -1,27 +1,20 @@
 # IDSO App Generator
 
-## Welcome
+## Setting up...
 
-Build a new internal app just by describing what you want in plain English. No coding experience required.
+Claude Code is installing and checking your Google Cloud and GitHub credentials.
 
-Claude Code handles everything — infrastructure, code, and deployment.
+This takes about 60 seconds on first run.
 
-## Set up your environment
+## Pick an app
 
-Run the setup script. It checks your Google Cloud and GitHub access, installs Claude Code, and shows your app menu.
+When setup completes, a menu will appear in the terminal.
 
-```bash
-source startup.sh
-```
+- Choose **Create new app** to build something new — just describe it in plain English
+- Choose **Open existing app** to make changes to one you've already built
 
-<walkthrough-footnote>This takes about 60 seconds on first run. If it asks you to authenticate with GitHub, follow the prompts in your browser.</walkthrough-footnote>
+## That's it!
 
-## You're all set
+Claude Code handles everything from here — writing the code, setting up the infrastructure, and deploying it.
 
-The menu lets you:
-- **Open an existing app** to make changes
-- **Create a new app** by describing it in plain English
-
-Claude Code will handle everything from here. Just tell it what you need.
-
-To come back later, open Cloud Shell and run `source startup.sh` again.
+To come back later, open Cloud Shell, navigate to this folder, and run `source scripts/startup.sh` again.
