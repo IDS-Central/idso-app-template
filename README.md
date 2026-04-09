@@ -6,14 +6,15 @@ This template repo powers the IDSO app creation workflow. Click the button below
 
 ## Get Started
 
-[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/IDS-Central/idso-app-template&cloudshell_tutorial=.cloudshell/tutorial.md&shellonly=true)
+[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/IDS-Central/idso-app-template&shellonly=true)
 
-**What happens when you click:**
+**After Cloud Shell opens, paste this command and press Enter:**
 
-1. Cloud Shell clones this repo and opens a guided tutorial
-2. You run the setup script (`source scripts/startup.sh`)
-3. A menu shows your existing apps or lets you create a new one
-4. Claude Code builds, deploys, and gives you the URL
+```
+source startup.sh
+```
+
+That's it! The script will set up your environment, then you describe the app you want to build.
 
 ## What gets built
 

@@ -1,32 +1,27 @@
 #!/bin/bash
-# IDSO App Generator — Cloud Shell startup script
-# Sets up the environment and presents an interactive app menu.
-#
-# The Cloud Shell tutorial guide clones the template repo and prompts the user
-# to run: source startup.sh
-# This script assumes it is running from within the cloned idso-app-template repo.
+# IDSO App Generator — Cloud Shell welcome + handoff to main startup script
+# This file lives at the repo root so it's easy to find after clone.
+# It prints a welcome banner and then sources the full startup script.
 
-set -e
-
-# ─── Configuration ───
-GCP_PROJECT="central-workspace"
-GH_ORG="IDS-Central"
-REGION="us-central1"
-TEMPLATE_REPO="idso-app-template"
-
-# ─── Colors ───
 BOLD='\033[1m'
-BLUE='\033[0;34m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
-RED='\033[0;31m'
+CYAN='\033[0;36m'
 NC='\033[0m'
 
 echo ""
-echo -e "${BOLD}═══════════════════════════════════════════════${NC}"
-echo -e "${BOLD}  IDSO App Generator — Setting up...${NC}"
-echo -e "${BOLD}═══════════════════════════════════════════════${NC}"
+echo -e "${BOLD}═══════════════════════════════════════════════════${NC}"
+echo -e "${BOLD}        Welcome to the IDSO App Generator          ${NC}"
+echo -e "${BOLD}═══════════════════════════════════════════════════════${NC}"
 echo ""
+echo -e "  Build internal apps by describing what you want"
+echo -e "  in plain English. ${BOLD}No coding required.${NC}"
+echo ""
+echo -e "  ${GREEN}Starting setup now...${NC}"
+echo ""
+
+# Hand off to the full startup script
+source "$(dirname "${BASH_SOURCE[0]}")/scripts/startup.sh"
 
 # ─── Step 1: Verify gcloud auth ───
 echo -e "${BLUE}[1/5]${NC} Checking Google Cloud authentication..."
